@@ -5,6 +5,7 @@ import { Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import ActivitiesScreen from './screens/ActivitiesScreen';
 import ResourcesScreen from './screens/ResourcesScreen';
+import ChatScreen from './screens/ChatScreen';
 
 // Placeholder screens
 const HomeScreen = () => (
@@ -12,24 +13,6 @@ const HomeScreen = () => (
     <Text>Home Screen</Text>
   </View>
 );
-
-const ChatScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>AI Companion Chat</Text>
-  </View>
-);
-
-// const ActivitiesScreen = () => (
-//   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//     <Text>Winter Activities</Text>
-//   </View>
-// );
-
-// const ResourcesScreen = () => (
-//   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//     <Text>Mental Health Resources</Text>
-//   </View>
-// );
 
 const Tab = createBottomTabNavigator();
 
